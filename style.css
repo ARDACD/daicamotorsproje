@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Ubuntu Sans", sans-serif;
+}
+
+body {
+    background-color: #E8EDF2;
+    color: #000;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: #2c3947aa;
+    backdrop-filter: blur(4px);
+    color: #E8EDF2;
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    border-radius: 12px;
+}
+
+.baslikdiv{
+    padding: 12px;
+    width: 100%;
+    position: fixed;
+    z-index: 1001;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffce6b;
+}
+
+nav {
+    display: flex;
+    gap: 5px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffce6b;
+    font-weight: 700;
+    padding: 8px;
+    transition: 0.3s ease;
+}
+
+nav a:hover {
+    color: #2c3947;
+    background-color: #ffce6b;
+    border-radius: 8px;
+}
+
+.header-buton1,
+.header-buton2 {
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 8px;
+    transition: 0.3s ease;
+}
+
+.header-buton1 {
+    background-color: #53a8e6;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.header-buton1:hover {
+    background-color: #ffffff;
+    color: #53a8e6;
+}
+
+.header-buton2 {
+    color: #111111;
+    background-color: #E8EDF2;
+}
+
+.header-buton2:hover {
+    color: #ffffff;
+    background-color: #111111;
+}
+
+.logo span {
+    color: #E8EDF2;
+}
+
+.logo-link{
+    text-decoration: none;
+}
+
+.hero video {
+    width: 100%;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.hero-icerik {
+    position: absolute;
+    text-align: center;
+    z-index: 100;
+    background-color: #2c3947aa;
+    backdrop-filter: blur(8px);
+    padding: 60px;
+    border-radius: 24px;
+    color: #f8f8f8;
+}
+
+.hero-icerik h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.hero-icerik h2 {
+    font-size: 1.8rem;
+}
+
+section{
+    scroll-margin-top: 100px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.markalar {
+    padding: 24px 100px;
+    background: linear-gradient(180deg, #B38B52, #E8EDF2);
+    scroll-margin-top: 80px;
+}
+
+.kampanyalar {
+    padding: 0 100px 20px;
+    background-color: #E8EDF2;
+}
+
+.hakkimizda {
+    padding: 0 100px 20px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.markalar-baslik,
+.kampanyalar-baslik,
+.hakkimizda-baslik {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 24px;
+}
+
+.markalar-grid,
+.kampanyalar-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    text-align: center;
+}
+
+.markalar-card,
+.kampanyalar-card {
+    padding: 10px;
+    border: 2px solid #2c394748;
+    border-radius: 12px;
+    background-color: #a0b2c56b;
+}
+
+.markalar-card h3,
+.kampanyalar-card h3 {
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.markalar-card p,
+.kampanyalar-card p {
+    font-size: 16px;
+}
+
+.hakkimizda p {
+    font-size: 20px;
+    text-align: justify;
+    margin-top: 20px;
+}
+
+.iletisim {
+    padding: 20px 100px;
+    background-color: #E8EDF2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.iletisim-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    width: 60%;
+}
+
+.iletisim-parca img {
+    max-width: 350px;
+    max-height: 350px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.iletisim-parca-form {
+    width: 100%;
+    max-width: none;
+    border: none;
+    padding: 0;
+}
+
+.iletisim-baslik {
+    text-align: left;
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #2c3947;
+}
+
+.iletisim form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.iletisim form input {
+    width: 100%;
+    margin: 0;
+    padding: 12px 15px;
+    border-radius: 8px;
+    border: 1px solid #cbd5e0;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.iletisim form input:focus {
+    outline: none;
+    border-color: #53a8e6;
+    box-shadow: 0 0 0 3px rgba(83, 168, 230, 0.2);
+}
+
+.iletisim form label {
+    font-weight: 600;
+    margin-bottom: -10px;
+    margin-top:-10px;
+    margin-left:4px;
+    color: #4a5568;
+}
+
+.submit-btn {
+    background-color: #2c3947;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+.submit-btn:hover {
+    background-color: #ffce6b;
+    color: #2c3947;
+}
+
+.bitis{
+    text-align: center;
+    padding:40px;
+    background: linear-gradient(180deg, #E6EBF0, #2c3947);
+    cursor: default;
+}
+
+/* Ekran genişliği 992px ve altına düştüğünde çalışır */
+@media (max-width: 992px) {
+    .iletisim-grid {
+        grid-template-columns: 1fr; /* Kolonları yan yana değil, alt alta diz */
+        width: 90%; /* Küçük ekranda daha fazla alan kaplasın */
+        padding: 20px;
+    }
+
+    .iletisim-parca {
+        display: none; /* Mobilde o resmi gizle ki form öne çıksın, istersen tutabilirsin */
+    }
+
+    .iletisim-baslik {
+        text-align: center; /* Mobilde başlığı ortalamak daha şık durur */
+    }
+
+    .markalar, .kampanyalar, .hakkimizda, .iletisim {
+        padding: 40px 20px; /* Kenar boşluklarını daralt ki içerik boğulmasın */
+    }
+
+    .markalar-grid, .kampanyalar-grid {
+        grid-template-columns: 1fr; /* Marka ve kampanya kartlarını da alt alta al */
+        gap: 20px;
+    }
+    .hakkimizda img{
+        width: 80%;
+    }
+    .hero{
+        height: 500px;
+        align-items: end;
+    }
+    .hero-icerik{
+        padding:20px 30px;
+        margin:12px;
+        border-radius: 12px;
+    }
+    .hero-icerik h1{
+        font-size: 1.6rem;
+    }
+    .hero-icerik h2{
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+    .hero video{
+        width: auto;
+    }
+    header{
+        display: block;
+    }
+    nav{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .header-buton1, .header-buton2{
+        margin-top:10px;
+    }
+    .logo{
+        margin-left:4px;
+        margin-bottom:8px;
+    }
+    section{
+        scroll-margin-top: 188px;
+    }
+    .markalar{
+        scroll-margin-top: 190px;
+    }
+}
