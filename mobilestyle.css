@@ -1,0 +1,72 @@
+@media (max-width: 992px) {
+    .iletisim-grid {
+        grid-template-columns: 1fr;
+        width: 90%;
+        padding: 20px;
+    }
+
+    .iletisim-parca {
+        display: none;
+    }
+
+    .iletisim-baslik {
+        text-align: center;
+    }
+
+    .markalar, .kampanyalar, .hakkimizda, .iletisim {
+        padding: 40px 20px;
+    }
+
+    .markalar-grid, .kampanyalar-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .hakkimizda img{
+        width: 80%;
+    }
+    .hero{
+        height: 500px;
+        align-items: end;
+    }
+    .hero-icerik{
+        padding:20px 30px;
+        margin:12px;
+        border-radius: 12px;
+    }
+    .hero-icerik h1{
+        font-size: 1.6rem;
+    }
+    .hero-icerik h2{
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+    .hero video{
+        width: auto;
+    }
+    header{
+        display: block;
+    }
+    nav{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .header-buton1, .header-buton2{
+        margin-top:10px;
+    }
+    .logo{
+        margin-left:4px;
+        margin-bottom:8px;
+    }
+    section{
+        scroll-margin-top: 188px;
+    }
+    .markalar{
+        scroll-margin-top: 190px;
+    }
+    .footer-container{
+        grid-template-columns: 1fr;
+    }
+    #sosyal{
+        color: #E8EDF2;
+    }
+}

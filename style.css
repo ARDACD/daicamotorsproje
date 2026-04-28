@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap');
-
 * {
     margin: 0;
     padding: 0;
@@ -287,77 +286,41 @@ html {
     color: #2c3947;
 }
 
-.bitis{
-    text-align: center;
-    padding:40px;
+footer{
+    padding:20px 150px;
+    color: #111111;
     background: linear-gradient(180deg, #E6EBF0, #2c3947);
-    cursor: default;
 }
 
-/* Ekran genişliği 992px ve altına düştüğünde çalışır */
-@media (max-width: 992px) {
-    .iletisim-grid {
-        grid-template-columns: 1fr; /* Kolonları yan yana değil, alt alta diz */
-        width: 90%; /* Küçük ekranda daha fazla alan kaplasın */
-        padding: 20px;
-    }
+.footer-container{
+    display:grid;
+    grid-template-columns: 1.5fr 1fr 1fr;
+    gap:40px;
+    margin-bottom:40px;
+}
 
-    .iletisim-parca {
-        display: none; /* Mobilde o resmi gizle ki form öne çıksın, istersen tutabilirsin */
-    }
+.footer-blok p{
+    line-height: 1.4;
+    font-size: 0.9rem;
+}
 
-    .iletisim-baslik {
-        text-align: center; /* Mobilde başlığı ortalamak daha şık durur */
-    }
+.footer-blok ul{
+    list-style-type: none;
+}
 
-    .markalar, .kampanyalar, .hakkimizda, .iletisim {
-        padding: 40px 20px; /* Kenar boşluklarını daralt ki içerik boğulmasın */
-    }
+.footer-blok ul li{
+    margin-bottom: 10px;
+}
 
-    .markalar-grid, .kampanyalar-grid {
-        grid-template-columns: 1fr; /* Marka ve kampanya kartlarını da alt alta al */
-        gap: 20px;
-    }
-    .hakkimizda img{
-        width: 80%;
-    }
-    .hero{
-        height: 500px;
-        align-items: end;
-    }
-    .hero-icerik{
-        padding:20px 30px;
-        margin:12px;
-        border-radius: 12px;
-    }
-    .hero-icerik h1{
-        font-size: 1.6rem;
-    }
-    .hero-icerik h2{
-        font-size: 1.2rem;
-        font-weight: 500;
-    }
-    .hero video{
-        width: auto;
-    }
-    header{
-        display: block;
-    }
-    nav{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .header-buton1, .header-buton2{
-        margin-top:10px;
-    }
-    .logo{
-        margin-left:4px;
-        margin-bottom:8px;
-    }
-    section{
-        scroll-margin-top: 188px;
-    }
-    .markalar{
-        scroll-margin-top: 190px;
-    }
+.sosyal i{
+    font-size: 1.5rem;
+}
+
+.sosyal li{
+    list-style-type: none;
+}
+
+.footer-alt{
+    text-align: center;
+    color: #E8EDF2;
 }
