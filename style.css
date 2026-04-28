@@ -316,11 +316,13 @@ footer{
     font-size: 1.5rem;
 }
 
-.sosyal li{
-    list-style-type: none;
-}
-
 .footer-alt{
     text-align: center;
     color: #E8EDF2;
+}
+
+.icon-text{
+    margin-top:4px;
+    display: flex;
+    align-items: center;
 }
